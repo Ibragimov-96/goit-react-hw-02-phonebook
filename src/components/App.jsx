@@ -72,7 +72,7 @@ export class App extends Component {
         <h1>Phonebook</h1>
         <Components>
           <Form addForm={this.addUser} />
-          <Search contacts={this.filter} />
+          <Search Filter={this.state.filter} contacts={this.filter} />
           <h3>Contacts</h3>
           <Contacts deleteContact={this.deleteUser}contact={this.search()} />
         </Components>

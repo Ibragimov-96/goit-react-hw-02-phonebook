@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Input } from './SearchStyle';
 export class Search extends Component {
   searchUserName = e => {
-    this.setState({ [e.currentTarget.name]: e.currentTarget.value })
+   
     const name = e.currentTarget.value;
     this.props.contacts(name);
   };
@@ -11,7 +11,7 @@ export class Search extends Component {
     return (
       <>
         <h3>Search Contacts</h3>
-        <Input onChange={this.searchUserName} />
+        <Input onChange={this.searchUserName} value={this.props.Filter}/>
       </>
     );
   }
