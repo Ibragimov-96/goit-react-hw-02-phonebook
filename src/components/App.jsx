@@ -13,7 +13,7 @@ export class App extends Component {
     
   };
 
-  addUser = data => {
+  addUsers = data => {
    
     // repeatUser.map(user => {
     //   if (user.name === data.name) {
@@ -71,7 +71,7 @@ export class App extends Component {
       >
         <h1>Phonebook</h1>
         <Components>
-          <Form addForm={this.addUser} />
+          <Form addForm={this.addUsers} />
           <Search Filter={this.state.filter} contacts={this.filter} />
           <h3>Contacts</h3>
           <Contacts deleteContact={this.deleteUser}contact={this.search()} />
